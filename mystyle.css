@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    padding: 10px;
+    background: url('images.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.header-wireframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+
+.logo-img {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 8px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(0, 242, 254, 0.6));
+}
+
+.titulo-principal {
+    font-size: 1.4rem;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(180deg, #ffffff 0%, #00f2fe 50%, #4facfe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 0px 10px rgba(0, 242, 254, 0.8));
+    width: 100%;
+    padding: 0 5px;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 100%;
+    margin: 5px 0;
+    gap: 15px;
+}
+
+.caja-informacion {
+    background-color: rgba(25, 15, 45, 0.92);
+    border: 2px solid #b19cd9;
+    border-radius: 20px;
+    padding: 22px 16px;
+    text-align: center;
+    margin: 0;
+    width: 95vw;
+    max-width: 95vw;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+    max-height: 75vh;
+    overflow-y: auto;
+}
+
+.caja-informacion::-webkit-scrollbar {
+    width: 6px;
+}
+
+.caja-informacion::-webkit-scrollbar-track {
+    background: rgba(30, 20, 50, 0.5);
+    border-radius: 10px;
+}
+
+.caja-informacion::-webkit-scrollbar-thumb {
+    background: #b19cd9;
+    border-radius: 10px;
+}
+
+.caja-informacion h2 {
+    font-size: 1.5rem;
+    color: #e2d9fc;
+    line-height: 1.3;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.caja-informacion h2:first-child {
+    margin-top: 0;
+}
+
+.caja-informacion p {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 14px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.contacto-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.correo-texto {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e2d9fc;
+    margin: 0;
+}
+
+.correo-texto span {
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #b19cd9;
+}
+
+.redes-sociales img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caja-formulario {
+    text-align: left;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.campo-grupo label {
+    font-size: 1.15rem;
+    color: #b19cd9;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-estilo {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 2px solid #b19cd9;
+    background: rgba(30, 20, 50, 0.6);
+    color: white;
+    outline: none;
+    font-size: 1.15rem;
+}
+
+.textarea-estilo {
+    resize: none;
+    border-radius: 12px;
+}
+
+.boton-contenedor {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.btn-enviar {
+    width: auto !important;
+    padding: 10px 25px !important;
+    font-size: 1.15rem !important;
+    margin: 0 !important;
+    cursor: pointer;
+}
+
+.btn-navegacion {
+    display: inline-block;
+    background-color: rgba(30, 20, 55, 0.95);
+    color: #ffffff;
+    border: 2px solid #b19cd9;
+    padding: 14px 20px;
+    margin: 5px auto;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.15rem;
+    width: 95vw;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.btn-navegacion:hover {
+    background-color: rgba(79, 172, 254, 0.4);
+    border-color: #00f2fe;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.6);
+}
+
+.footer-wireframe {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0 5px 0;
+    width: 100%;
+}
+
+.numero-pagina {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #00f2fe;
+    font-family: 'Arial Black', sans-serif;
+    text-shadow: 0 0 5px rgba(0, 242, 254, 0.8);
+}
+
+.footer-botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.creditos-footer {
+    font-size: 0.85rem;
+    color: #e2d9fc;
+    text-align: center;
+    opacity: 0.9;
+    line-height: 1.3;
+    padding: 0 10px;
+}
+
+.creditos-footer p {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .header-wireframe {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+        position: relative;
+    }
+    
+    .logo-img {
+        height: 110px;
+        width: 110px;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        margin-bottom: 0;
+    }
+
+    .titulo-principal {
+        font-size: 2.4rem;
+        text-align: center;
+        margin-top: 0;
+        padding: 0 140px;
+    }
+
+    .contenedor-principal {
+        max-width: 1100px;
+    }
+
+    .caja-informacion {
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px;
+    }
+
+    .caja-informacion h2 {
+        font-size: 2rem;
+    }
+
+    .caja-informacion p {
+        font-size: 1.25rem;
+    }
+
+    .correo-texto {
+        font-size: 1.3rem;
+    }
+
+    .redes-sociales a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .creditos-footer {
+        font-size: 0.9rem;
+    }
+}
